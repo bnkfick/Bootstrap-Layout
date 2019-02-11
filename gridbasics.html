@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+    integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <style>
+    .row div {
+      padding: 20px 10px;
+      border: 1px solid;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <h1>Bootstrap Grid</h1>
+
+    <p>Very similar to the original Bootstrap 3 grid. Makes use of flexbox. 12 Columns and x number of Rows.</p>
+    <ul>
+      <li>xs</li>
+      <li>col-sm - small screen sizes and upwards</li>
+      <li>col-md - medium screen sizes and upwards</li>
+      <li>col-lg - medium screen sizes and upwards </li>
+      <li>xl</li>
+    </ul>
+    <p>
+      Create a row. Create a column or columns within a row. At what screensize and up do you want to col to occupy x of
+      12 columns. col-sm-6 means stacked until 576px which is a small screen size. Then each column will occupy 6 of 12
+      columns.
+    </p>
+    <div class="row" style="background: lightblue">
+      <div class="col-sm-6">col-sm-6</div>
+      <div class="col-sm-6">col-sm-6</div>
+    </div>
+    <p>
+      Create a row. Create a column or columns within a row. At what screensize and up do you want to col to occupy x of
+      12 columns. col-md-6 means stacked until 768px which is a medium screen size. Then each column will occupy 6 of 12
+      columns.
+      col-lg-3 means stacked until 992px which is a large screen size. Then each column will occupy 3 of 12 columns.
+    </p>
+    <div class="row" style="background: mistyrose;">
+      <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+      <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+      <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+      <div class="col-md-6 col-lg-3">col-md-6 col-lg-3</div>
+    </div>
+    <p>
+        No Sizes specified
+      </p>
+      <div class="row" style="background: yellowgreen;">
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+        <div class="col-3">col-3</div>
+      </div>  
+  </div>
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
+    integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+    integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+    integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
