@@ -12,46 +12,110 @@
 </head>
 
 <body>
-    <h1>Bootstrap 4 Reboot</h1>
-    <h2><a href="https://necolas.github.io/normalize.css/">Built on top of Normalize</a></h2>
-    <p>For improved cross-browser rendering, Bootstrap uses <a
-            href="https://getbootstrap.com/docs/4.2/content/reboot/">Reboot</a> to correct inconsistencies across
-        browsers and devices while providing slightly more opinionated resets to common HTML elements.
-    </p>
-    <p>
-        Normalize.css makes browsers render all elements more consistently and in line with modern standards. It
-        precisely targets only the styles that need normalizing.</p>
+    <nav class="navbar-left navbar-toggleable-sm bg-info navbar-inverse pt-2 pl-2">
+        <div class="container">
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="index.html">About</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Containers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="flexgrid.html">Flexgrid</a>
+                            <a class="dropdown-item" href="gridbasics.html">Grid Basics</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link" href="jumbotrons.html">Jumbotrons</a>
+                    <a class="nav-item nav-link" href="cards.html">Cards</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Navigation
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="nav.html">Nav</a>
+                            <a class="dropdown-item" href="navbar.html">Navbar</a>
+                            <a class="dropdown-item" href="pagination.html">Pagination</a>
+                        </div>
+                    </li>
+                    <a class="nav-item nav-link" href="tooltips.html">Tooltips</a>
+                    <a class="nav-item nav-link" href="utilities.html">Utilities</a>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-    <h1>Different from Bootstrap 3</h1>
-    <ul>
-        <li>Simplified Navigation</li>
-        <li>Some appearance font, color etc. No longer ships with glyphicons</li>
-        <li>Bootstrap 3 had used Normalize.css in order to render all the HTML elements their consistent appearance.
-            Bootstrap 4 adopted an enhanced version of Normalize.css</li>
-        <li>Grid System &mdash; grid tier system lets the version 4 enjoy the presence of up to 5 grid tiers</li>
-        <li>Adopting Flexbox which does not replace the already existing page layout.</li>
-        <li>Bootstrap 4 offers an improved form control.</li>
-        <li>In the version 4, dropdown item class needs to be applied to every dropdown item. </li>
-        <li>Now, Bootstrap 4 demands one to properly indicate pagination and link items using page-item as well as
-            page-link class.</li>
-        <li>As in Bootstrap 3, plugins were divided into two categories, namely, a file including style rules and a
-            Javascript file. There aren’t any significant changes as to how the plugins are compiled in Bootstrap 4
-            either. In the latest version, style rules are composed using SASS. Whereas, plugins are available under the
-            global jQuery object as the Javascript file contains a jQuery section.</li>
-        <li>Bootstrap 4 offers its immense support to all the major and renowned browsers of all times, like, Safari,
-            Chrome, Opera and Internet Explorer (10, and above) etc. <strong>If you require IE8-9 support, use Bootstrap
-                3.</strong></li>
-        <li>In Bootstrap 4, new utility classes have been included without hampering any existing functionality,
-            whatsoever. Such important additions are as that of responsive text alignment classes, responsive floats,
-            and responsive embedding. Apart from offering many shortcuts, these, respectively, allow for changing the
-            alignment of the text, floating of the elements and the scaling of the aspect ratio of any embedded media.
-        </li>
-    </ul>
-    <form>
-        <label></label>
-        <input type="text" placeholder="placeholder" />
-        <input type="submit" value="Click me" />
-    </form>
+
+    <div class="container mt-5">
+
+        <h1><a href="https://getbootstrap.com/" alt="link to bootstrap website" target='_new'>Bootstrap</a> 4 Reboot
+        </h1>
+        <h2><a href="https://necolas.github.io/normalize.css/">Built on top of Normalize</a></h2>
+        <p>For improved cross-browser rendering, Bootstrap uses <a
+                href="https://getbootstrap.com/docs/4.2/content/reboot/">Reboot</a> to correct inconsistencies across
+            browsers and devices while providing slightly more opinionated resets to common HTML elements.
+        </p>
+        <p>
+            Normalize.css makes browsers render all elements more consistently and in line with modern standards. It
+            precisely targets only the styles that need normalizing.</p>
+
+        <h1>Different from Bootstrap 3</h1>
+        <ul>
+            <li>Simplified Navigation</li>
+            <li>Some appearance font, color etc. No longer ships with glyphicons</li>
+            <li>Bootstrap 3 had used Normalize.css in order to render all the HTML elements their consistent appearance.
+                Bootstrap 4 adopted an enhanced version of Normalize.css</li>
+            <li>Grid System &mdash; grid tier system lets the version 4 enjoy the presence of up to 5 grid tiers</li>
+            <li>Adopting Flexbox which does not replace the already existing page layout.</li>
+            <li>Bootstrap 4 offers an improved form control.</li>
+            <li>In the version 4, dropdown item class needs to be applied to every dropdown item. </li>
+            <li>Now, Bootstrap 4 demands one to properly indicate pagination and link items using page-item as well as
+                page-link class.</li>
+            <li>As in Bootstrap 3, plugins were divided into two categories, namely, a file including style rules and a
+                Javascript file. There aren’t any significant changes as to how the plugins are compiled in Bootstrap 4
+                either. In the latest version, style rules are composed using SASS. Whereas, plugins are available under
+                the
+                global jQuery object as the Javascript file contains a jQuery section.</li>
+            <li>Bootstrap 4 offers its immense support to all the major and renowned browsers of all times, like,
+                Safari,
+                Chrome, Opera and Internet Explorer (10, and above) etc. <strong>If you require IE8-9 support, use
+                    Bootstrap
+                    3.</strong></li>
+            <li>In Bootstrap 4, new utility classes have been included without hampering any existing functionality,
+                whatsoever. Such important additions are as that of responsive text alignment classes, responsive
+                floats,
+                and responsive embedding. Apart from offering many shortcuts, these, respectively, allow for changing
+                the
+                alignment of the text, floating of the elements and the scaling of the aspect ratio of any embedded
+                media.
+            </li>
+        </ul>
+        <form>
+            <label></label>
+            <input type="text" placeholder="placeholder" />
+            <input type="submit" value="Click me" />
+        </form>
+        <nav aria-label="links through the bootstrap example pages" class="mt-5">
+            <ul class="pagination">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
     <!-- jQuery first, then Tether, then Bootstrap JS. -->
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"
         integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n"
